@@ -1,16 +1,19 @@
 {
-  "name": "Sample Secure Setting App",
+  "name": "Demo Secure Settings App",
   "author": {
-    "name": "S. Sample",
-    "email": "ssample@example.com",
-    "url": "https://www.zendesk.com"
+    "name": "Developer Advocacy at Zendesk",
+    "email": "developer-support@zendesk.com",
+    "url": "https://developer.zendesk.com/documentation/"
   },
   "defaultLocale": "en",
   "private": true,
   "domainWhitelist": ["httpbin.org"],
   "location": {
     "support": {
-      "ticket_sidebar": "assets/iframe.html"
+      "ticket_sidebar": {
+        "url": "assets/iframe.html",
+        "flexible": true
+      }
     }
   },
   "parameters": [

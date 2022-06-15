@@ -1,6 +1,12 @@
 # Demo App Test Secure Settings Feature
 
-A simple app that creates **two** secure settings and calls a remote web page with those settings. Secure settings are used to conceal sensitive information within an app's settings while making AJAX requests. You'll see that once secure settings are entered they are not redisplayed in the app's settings page. This demonstration is meant to supplement Zendesk's Developer Documentation on [Using Secure Settings](https://developer.zendesk.com/documentation/apps/app-developer-guide/using-the-apps-framework/#using-secure-settings).
+In the Zendesk App Framework, you're able to set secure settings within your app.Secure settings are used to conceal sensitive information within an app's settings while making AJAX requests. A setting is defined as secure by applying the value **true** to the secure property when **first** creating a setting parameter. This application creates two secure settings within the Zendesk application and then displays making calls to a remote web page with those settings. 
+
+The first request showcases a GET request to a remote server passing the secure setting data as arguments within the query string. 
+
+The second request showcases a POST request to a remote server where secure setting data is passed in the request body. 
+
+You'll see that once secure settings are entered they are not redisplayed in the app's settings page. This demonstration is meant to supplement Zendesk's Developer Documentation on [Using Secure Settings](https://developer.zendesk.com/documentation/apps/app-developer-guide/using-the-apps-framework/#using-secure-settings).
 
 ## Getting started
 
@@ -24,7 +30,7 @@ git clone https://github.com/example.git
 
 Run `zcli apps:create` and enter your admin and test instance information
 
-When prompted in the terminal, enter a value for setting.`token` & setting.`subdomain`. For the testing purposes of this application, it is recommended to use 5 characters or less for the `token` and `subdomain` values.
+When prompted in the terminal, enter a value for setting.`token` & setting.`subdomain`. Currently, in the manifest.json you'll find that default values have been set. Feel free to reuse or enter new values. For the testing purposes of this application, it is recommended to use 5 characters or less for the `token` and `subdomain` values.
 
 **3. Test application**
 
