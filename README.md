@@ -1,4 +1,4 @@
-# Demo App Test Secure Setting Feature
+# Demo App Test Secure Settings Feature
 
 A simple app that creates **two** secure settings and calls a remote web page with those settings. Secure settings are used to conceal sensitive information within an app's settings while making AJAX requests. You'll see that once secure settings are entered they are not redisplayed in the app's settings page. This demonstration is meant to supplement Zendesk's Developer Documentation on [Using Secure Settings](https://developer.zendesk.com/documentation/apps/app-developer-guide/using-the-apps-framework/#using-secure-settings).
 
