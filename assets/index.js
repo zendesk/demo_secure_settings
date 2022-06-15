@@ -24,8 +24,8 @@ async function dataViaQueryParameter() {
     const response = await client.request(settings);
     console.log("GET data:", response);
     // displays token and subdomain values in the app UI
-    document.getElementById("requestData").style.color = "teal";
-    return document.getElementById("requestData").innerHTML = response.args
+    document.getElementById("requestData").style.color = "blue";
+    return document.getElementById("requestData").innerHTML = JSON.stringify(response.args)
     ;
   } catch (error) {
     document.getElementById("requestData").style.color = "red";
@@ -45,7 +45,7 @@ async function dataViaRequestBody() {
     type: "POST",
     // again this data isn't accessible until after the request is successfully made.
     // you can also test passing setting.token as well in the payload
-    data: { name: "{{setting.subdomain}}" },
+    data: JSON.stringify({ name: "{{setting.subdomain}}" }),
   };
 
   try {
