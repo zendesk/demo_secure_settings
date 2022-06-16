@@ -38,19 +38,7 @@ Because it's a ticket_sidebar app, select any ticket in your Support instance to
 
 You should see the values you entered for `token` and `subdomain` appear in the app window.
 
-### Run apps locally
 
-To test either app individually in your local environment, use the following steps.
-
-**Run Receive App**
-
-**1. Run the app**
-
-```
-zcli apps:server
-```
-
-[Testing your Zendesk app locally](https://developer.zendesk.com/documentation/apps/app-developer-guide/zcli/#testing-your-zendesk-app-locally)
 
 <!-- Links to relevant resources such as help center articles or dev docs -->
 
@@ -59,6 +47,10 @@ zcli apps:server
 - The remote server used is https://httpbin.org
 
 - For your own remote server, include the subdomain in the domainWhitelist value of your manifest.json
+
+- Secure Settings has a known issue for local testing which is why this application needs to be installed to work properly
+
+- For more details, please see the documented Github issue [here](https://github.com/zendesk/zcli/issues/63)
 
 ## Additional Resources
 
