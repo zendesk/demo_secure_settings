@@ -23,7 +23,7 @@ Follow these steps to get a local copy up and running.
 **1. Clone the repo**
 
 ```
-git clone https://github.com/example.git
+git clone https://github.com/zendesk/demo_secure_settings.git
 ```
 
 **2. Install the app**
@@ -63,7 +63,7 @@ You should see the values you entered for `token` and `subdomain` appear in the 
 
 ## Issues
 
-You can [create an issue on Github](https://github.com/zendesk/example/issues/new),
+You can [create an issue on Github](https://github.com/zendesk/demo_secure_settings/issues/new),
 reach out in our [Developer Community](https://support.zendesk.com/hc/en-us/community/topics),
 or report the issue in the [Zendesk Developers Slack group](https://docs.google.com/forms/d/e/1FAIpQLScm_rDLWwzWnq6PpYWFOR_PwMaSBcaFft-1pYornQtBGAaiJA/viewform).
 
